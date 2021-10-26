@@ -19,7 +19,7 @@ on:
 
 jobs:
   test:
-    name: Check
+    name: Test
     runs-on: ubuntu-latest
     if: ${{ (github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork) || github.event_name == 'push' }}
 
@@ -37,7 +37,7 @@ jobs:
       - name: Check
         uses: actions-rs/cargo@v1
         with:
-          command: check
+          command: test
 
   fmt:
     name: Formatting
