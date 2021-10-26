@@ -1,0 +1,14 @@
+[package]
+name = "extract_macro"
+version = "0.1.0"
+authors = ["Jacob Pratt <open-source@jhpratt.dev>"]
+edition = "2021"
+repository = "https://github.com/jhpratt/extract_macro"
+categories = ["no-std", "rust-patterns"]
+description = "A macro to extract a value from a pattern."
+license = "MIT OR Apache-2.0"
+include = ["LICENSE-*", "lib.rs"]
+
+[lib]
+name = "extract"
+path = "lib.rs"
